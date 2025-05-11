@@ -100,9 +100,9 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 80%; /* Menambahkan lebar maksimum */
-  margin: 0 auto; /* Memusatkan kontainer secara horizontal */
-  box-sizing: border-box; /* Memastikan padding dan border dihitung dalam lebar elemen */
+  max-width: 80%; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
 }
 
 .tentang-saya h1 {
@@ -113,9 +113,11 @@ nav ul li a:hover {
 
 
 .tentang-container {
-  display: flex;
-  flex-direction: column-reverse;
+ display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -170,8 +172,8 @@ td img {
 }
 
 .grid-opini {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
